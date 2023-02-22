@@ -1,0 +1,29 @@
+esphome:
+  name: mushroom-climat
+  friendly_name: Mushroom_climat
+
+esp8266:
+  board: esp01_1m
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "TIm98w7KhT6LyC+FFGuSvdRROBtYH4HJzFD1iUt32M4="
+
+ota:
+  password: "65e7c7a40b115b861b190f08d40b367b"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Mushroom-Climat Fallback Hotspot"
+    password: "0ANIOvW3PmQG"
+
+captive_portal:
+    
