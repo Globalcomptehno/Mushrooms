@@ -27,3 +27,21 @@ wifi:
 
 captive_portal:
     
+
+dallas:
+  - pin: 4
+
+# Individual sensors
+sensor:
+  - platform: dallas
+    address: 0x1c0000031edd2a28
+    name: "Ground Temperature"
+  - platform: dallas
+    address: 0x1c0000031edd2a29
+    name: "Box Temperature"
+
+switch:
+  - platform: gpio
+    name: "Heat_1"
+    pin: 1
+    id: Heat
