@@ -29,19 +29,19 @@ captive_portal:
     
 
 dallas:
-  - pin: 4
+  - pin: GPIO2
 
 # Individual sensors
 sensor:
   - platform: dallas
-    address: 0x1c0000031edd2a28
+    address: 0xeb020b9177581128
     name: "Ground Temperature"
   - platform: dallas
-    address: 0x1c0000031edd2a29
+    address: 0x3b3c01d607c77328
     name: "Box Temperature"
 
 switch:
   - platform: gpio
     name: "Heat_1"
-    pin: 1
+    pin: GPIO5
     id: Heat
